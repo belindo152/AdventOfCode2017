@@ -517,7 +517,7 @@ lpyubo dylpfb iehwug decj ntidy cuygyg lalkb iutu oxgm imn';
 	
 	$passphrases = explode(PHP_EOL, $input); // split input in lines (passphrases)
 	
-	foreach($passphrases as $key=>$passphrase) { // loop though passphrases
+	foreach($passphrases as $passphrase) { // loop though passphrases
 		$passphrasePart = explode(" ", $passphrase); // make array with each wordgroup in the passphrase
 		if(count($passphrasePart) == count(array_count_values($passphrasePart))) { // if number of wordgroups equals number of unique wordgroups, add 1 to total
 			$validPassPhrases++;
